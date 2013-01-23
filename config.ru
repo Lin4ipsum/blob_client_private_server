@@ -1,7 +1,7 @@
 require "rubygems"
 require "geminabox"
 
-Geminabox.data = "./geminabox-xdata"
+Geminabox.data = "/var/geminabox-data"
 
 use Rack::Auth::Basic, "GemInAbox" do |username, password|
   puts "username"
